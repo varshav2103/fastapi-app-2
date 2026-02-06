@@ -40,7 +40,7 @@ def get_student_by_roll(roll:str)->StudentResponse:
             return student
 
 def read_student(roll:str)->StudentResponse:
-    return StudentResponse(get_student_by_roll(roll))
+    return get_student_by_roll(roll)
 
 
 def update_student(roll:str,student:Student)->StudentResponse:
